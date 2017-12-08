@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+
+	<title>DzenCode YogaLanding</title>
+
+	<link rel="stylesheet" href="css/main.css">
+
+	<script src="https://ajax.googleapis.com/ajax/abs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+	
+	<style>
+	* {transition: all 0.5, ease-n-out;}
+		section {
+			height: 600px;
+			width: 100%; 
+			display: block;
+			overflow: hidden;
+		}
+		section:nth-child(odd) {
+			background-color: #f1f1f1;
+		}
+		Section:nth-child(even) {
+			background-color: #666;
+		}
+	</style>
+
+	<script>
+		$(document).ready(function(){
+    	$("#menu").on("click","a", function (event) {
+					event.preventDefault();
+					var id  = $(this).attr('href'),
+					top = $(id).offset().top;
+					$('body,html').animate({scrollTop: top}, 1500);
+			});
+		});
+	</script>
+
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<section>
+				<nav id="menu">
+					<a href="#" class="sandwich-menu">
+						<span>&nbsp;</span>
+						<span>&nbsp;</span>
+						<span>&nbsp;</span>
+					</a>
+					<nav>
+						<h1 class="logo"><a href="#">Yoga</a></h1>
+						<a href="#about">About us</a>
+						<a href="#reservation">Reservation</a>
+						<a href="#gallery">Gallery</a>
+						<a href="#blog">Blog</a>
+						<a href="#elements">Elements</a>
+						<a href="#shop">Shop</a>
+					</nav>
+				</nav>
+			</section>
+		</header>
+		<main>
+			<section class="primo">
+				<div class="form-container">
+					<form action="#">
+						<h3>Trial Class</h3>
+						<div class="row">
+							<input type="text" placeholder="Enter your name" />
+						</div>
+						<div class="row">
+							<input type="text" placeholder="Enter your phone" />
+						</div>
+						<div class="row">
+							<select name="class" id="chooseClass">
+								<option value="class 1">class 1</option>
+								<option value="class 2">class 2</option>
+								<option value="class 3">class 3</option>
+							</select>
+						</div>
+						<input type="submit" value="Try it" />
+					</form>
+				</div>
+				<div class="add">
+					<h2>Just balance <br/> your mind &amp; body</h2>
+					<p class="beautiful">Create the healthy living for yourself</p>
+				</div>
+			</section>
+			<section id="about">
+				<div class="wrap">
+					<h3>yoga feature program</h3>
+					<p class="beautiful">Our Classes</p>
+					<div class="blockbox">
+						<div>
+							<figure><img src="img/img-02.jpg" alt="image"></figure>
+							<article>
+								<h5>yoga for health</h5>
+								<p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+								<p class="script">Ashtanga - Hatha</p>
+							</article>
+						</div>
+						<div>
+							<figure><img src="img/img-03.jpg" alt="image"></figure>
+							<article>
+								<h5>yoga for lose weight</h5>
+								<p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+								<p class="script">Ashtanga - Hatha</p>
+							</article>
+						</div>
+						<div>
+							<figure><img src="img/img-04.jpg" alt="image"></figure>
+							<article>
+								<h5>yoga for children</h5>
+								<p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+								<p class="script">Ashtanga - Hatha</p>
+							</article>
+						</div>
+						<div>
+							<figure><img src="img/img-05.jpg" alt="image"></figure>
+							<article>
+								<h5>yoga for elderly</h5>
+								<p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+								<p class="script">Ashtanga - Hatha</p>
+							</article>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="gallery">
+				<div class="wrap">
+					<div class="galerry-block">
+						<div>
+							<img src="img/img-06.jpg" alt="image">
+							<div class="cover"><a href="#"></a></div>
+						</div>
+						<div>
+							<img src="img/img-07.jpg" alt="image">
+							<div class="cover"><a href="#"></a></div>
+						</div>
+						<div>
+							<img src="img/img-09.jpg" alt="image">
+							<div class="cover"><a href="#"></a></div>
+						</div>
+						<div>
+							<img src="img/img-10.jpg" alt="image">
+							<div class="cover"><a href="#"></a></div>
+						</div>
+						<div>
+							<img src="img/img-11.jpg" alt="image">
+							<div class="cover"><a href="#"></a></div>
+						</div>
+						<div>
+							<img src="img/img-12.jpg" alt="image">
+							<div class="cover"><a href="#"></a></div>
+						</div>
+						<div>
+							<img src="img/img-13.jpg" alt="image">
+							<div class="cover"><a href="#"></a></div>
+						</div>
+						<div>
+							<img src="img/img-14.jpg" alt="image">
+							<div class="cover"><a href="#"></a></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="aboutUs">
+				<div class="wrap">
+					<div class="column">
+						<h3>about us</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus accusamus praesentium quos laudantium ab doloremque, quia, soluta saepe voluptatum sapiente accusantium nam distinctio provident nostrum repellendus eaque dolorem. Quaerat, adipisci.</p>
+					</div>
+					<div class="column">
+						<div class="slider">
+							<div><img src="img/img-17.png" alt="image"></div>
+							<div><img src="img/img-17.png" alt="image"></div>
+							<div><img src="img/img-17.png" alt="image"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="elements">
+				<div class="wrap">
+					<div class="element-block item_1">
+						<h4>improved overall health</h4>
+						<p>Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
+					</div>
+					<div class="element-block item_2">
+						<h4>increased concentration</h4>
+						<p>Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
+					</div>
+					<div class="element-block item_3">
+						<h4>blance your mind</h4>
+						<p>Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
+					</div>
+					<div class="element-block item_4">
+						<h4>sleep better</h4>
+						<p>Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
+					</div>
+					<div class="element-block item_5">
+						<h4>weight loss</h4>
+						<p>Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
+					</div>
+					<div class="element-block item_6">
+						<h4>strenghens your bones</h4>
+						<p>Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
+					</div>
+					<div class="element-block item_7">
+						<h4>increased flexibility</h4>
+						<p>Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
+					</div>
+					<div class="element-block item_8">
+						<h4>lower blood pressure</h4>
+						<p>Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
+					</div>
+				</div>
+			</section>
+			<section id="shop">
+				<div class="wrap">
+					<div class="ticket">
+						<header>
+							<h3><span>$</span> 49 <sub>/ month</sub></h3>
+						</header>
+						<div class="box">
+							<p>ENTRY DATE: MON – FRI</p>
+							<p>ENTRY TIME: 8A.M – 8P.M</p>
+							<p>NUTRITION ADVICER: NO</p>
+							<button>Buy now</button>
+						</div>	
+					</div>
+					<div class="ticket">
+						<header>
+							<h3><span>$</span> 69 <sub>/ month</sub></h3>
+						</header>
+						<div class="box">
+							<p>ENTRY DATE: MON – FRI</p>
+							<p>ENTRY TIME: 8A.M – 8P.M</p>
+							<p>NUTRITION ADVICER: YES</p>
+							<button>Buy now</button>
+						</div>	
+					</div>
+					<div class="ticket">
+						<header>
+							<h3><span>$</span> 99 <sub>/ month</sub></h3>
+						</header>
+						<div class="box">
+							<p>ENTRY DATE: MON – FRI</p>
+							<p>ENTRY TIME: 8A.M – 8P.M</p>
+							<p>NUTRITION ADVICER: YES</p>
+							<button>Buy now</button>
+						</div>	
+					</div>
+				</div>
+			</section>
+			<section id="blog">
+				<div class="wrap">
+					<div class="blog-slider">
+						<div>
+							<figure><img src="img/img-18.png" alt="avatar"></figure>
+							<article>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat iure beatae accusamus, facere explicabo aliquam similique eius deserunt asperiores incidunt amet tenetur sed tempore soluta veniam ea iste minima! Temporibus!</p>
+								<p class="sign"><span>Trainer</span> Laura Shepard</p>
+							</article>
+						</div>
+						<div>
+							<figure><img src="img/img-18.png" alt="avatar"></figure>
+							<article>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat iure beatae accusamus, facere explicabo aliquam similique eius deserunt asperiores incidunt amet tenetur sed tempore soluta veniam ea iste minima! Temporibus!</p>
+								<p class="sign"><span>Trainer</span> Laura Shepard</p>
+							</article>
+						</div>
+						
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<section>
+				<div class="wrap">
+					<div class="column">
+						<h4>about</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, laborum blanditiis odio, placeat voluptatibus quasi esse recusandae ea corporis maiores hic expedita totam eius quo commodi dolore. Quod, aliquid, reiciendis.</p>
+						<ul class="socials">
+							<li><a class="pinterest" href="http://pinterest.com" target="_blank"></a></li>
+							<li><a class="twitter" href="http://twitter.com" target="_blank"></a></li>
+							<li><a class="facebook" href="http://facebook.com" target="_blank"></a></li>
+							<li><a class="googlePlus" href="http://googleplus.com" target="_blank"></a></li>
+							<li><a class="instagram" href="http://instagram.com" target="_blank"></a></li>
+						</ul>
+					</div>
+					<div class="column">
+						<h4>contact us</h4>
+						<ul>
+							<li class="location">5419 Joseph Mountains <br/>Apt. 716</li>
+							<li class="phone">+1 234 567 89 <br/> +1 234 678 90</li>
+							<li class="mail"><a href="mailto:joga.info@example.com">joga.info@example.com</a></li>
+							<li class="site"><a href="http://www.example.com" target="_blank">www.example.com</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section>
+				<p>Copyright  &copy;  2016-2017 Yoga classes</p>
+			</section>
+		</footer>
+	</div>
+</body>
+</html>
