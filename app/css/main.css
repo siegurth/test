@@ -147,6 +147,11 @@ section {
   src: url("../fonts/FreestyleScript/10036.eot");
   src: url("../fonts/FreestyleScript/10036.eot") format("embedded-opentype"), url("../fonts/FreestyleScript/10036.woff2") format("woff2"), url("../fonts/FreestyleScript/10036.woff") format("woff"), url("../fonts/FreestyleScript/10036.ttf") format("truetype"), url("../fonts/FreestyleScript/10036.svg#10036") format("svg"); }
 
+@font-face {
+  font-family: 'Champagne_LimousinesBold';
+  src: url("../fonts/Champagne_Limousines/Champagne_LimousinesBold.eot");
+  src: url("../fonts/Champagne_Limousines/Champagne_LimousinesBold.eot") format("embedded-opentype"), url("../fonts/Champagne_Limousines/Champagne_LimousinesBold.woff2") format("woff2"), url("../fonts/Champagne_Limousines/Champagne_LimousinesBold.woff") format("woff"), url("../fonts/Champagne_Limousines/Champagne_LimousinesBold.ttf") format("truetype"), url("../fonts/Champagne_Limousines/Champagne_LimousinesBold.svg#Champagne_LimousinesBold") format("svg"); }
+
 /*@import "_slick";*/
 /* header */
 header {
@@ -156,10 +161,46 @@ header {
   display: flex;
   -webkit-align-content: center;
       -ms-flex-line-pack: center;
-          align-content: center; }
+          align-content: center;
+  min-height: 100px; }
   header section {
     max-width: 1200px;
-    width: 100%; }
+    width: 100%;
+    margin: 0 auto;
+    padding: 17px 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+            align-content: center; }
+    header section .wrap {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-align-content: center;
+          -ms-flex-line-pack: center;
+              align-content: center; }
+  header .logo {
+    width: 70px;
+    display: block;
+    position: absolute;
+    top: 17px;
+    left: 50%;
+    margin-left: -35px; }
+    header .logo a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      padding-top: 40px;
+      background: url(../img/bg-logo.png) no-repeat 50% 0;
+      font-size: 24px;
+      color: #6666cc;
+      text-transform: uppercase;
+      font-family: 'Champagne_LimousinesBold';
+      text-align: center; }
   header .sandwich-menu {
     display: none;
     overflow: hidden; }
@@ -171,13 +212,69 @@ header {
       header .sandwich-menu span + span {
         margin-top: 10px; }
   header nav {
+    max-width: 780px;
+    width: 100%;
+    position: relative;
+    z-index: 5;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
-            justify-content: space-around; }
+    -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+            align-content: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 auto; }
+    header nav ul {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-align-content: flex-start;
+          -ms-flex-line-pack: start;
+              align-content: flex-start;
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+          -ms-flex-pack: start;
+              justify-content: flex-start; }
+      header nav ul:first-child {
+        -webkit-align-self: flex-start;
+            -ms-flex-item-align: start;
+                align-self: flex-start; }
+      header nav ul:last-child {
+        -webkit-align-self: flex-end;
+            -ms-flex-item-align: end;
+                align-self: flex-end; }
+      header nav ul li {
+        position: relative;
+        padding-bottom: 6px; }
+        header nav ul li + li {
+          margin-left: 29px; }
+        header nav ul li:nth-last-child(-n+3) {
+          -webkit-align-self: flex-end;
+              -ms-flex-item-align: end;
+                  align-self: flex-end; }
+        header nav ul li:after {
+          content: "";
+          display: none;
+          width: 30px;
+          height: 1px;
+          background-color: #6666cc;
+          position: absolute;
+          left: 50%;
+          margin-left: -15px;
+          bottom: 0;
+          z-index: 16; }
+        header nav ul li:hover:after {
+          display: block; }
+        header nav ul li:hover a {
+          color: #6666cc; }
+        header nav ul li a {
+          color: #666;
+          font-weight: 600; }
 
 /* main */
 section h2 {
