@@ -188,7 +188,65 @@ header {
 #elements {
   background: url(../img/img-17.png) no-repeat 0 0/cover;
   height: 100%;
-  max-height: 808px; }
+  min-height: 808px; }
+  #elements .wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-align-content: flex-start;
+        -ms-flex-line-pack: start;
+            align-content: flex-start;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+    #elements .wrap .element-block {
+      text-align: center;
+      padding: 100px 0 50px;
+      color: #fff;
+      max-width: 270px;
+      position: relative;
+      z-index: 4; }
+      #elements .wrap .element-block:before {
+        content: '';
+        display: block;
+        width: 70px;
+        height: 70px;
+        background-image: url(../img/icon-pack-01.png);
+        background-repeat: no-repeat;
+        position: absolute;
+        z-index: 14;
+        top: 0;
+        left: 50%;
+        margin-left: -35px; }
+      #elements .wrap .element-block.item_1:before {
+        background-position: -15px -10px; }
+      #elements .wrap .element-block.item_2:before {
+        background-position: -124px -6px; }
+      #elements .wrap .element-block.item_3:before {
+        background-position: -235px -6px; }
+      #elements .wrap .element-block.item_4:before {
+        background-position: -343px -9px; }
+      #elements .wrap .element-block.item_5:before {
+        background-position: -440px -8px; }
+      #elements .wrap .element-block.item_6:before {
+        background-position: -531px -6px; }
+      #elements .wrap .element-block.item_7:before {
+        background-position: -628px -12px; }
+      #elements .wrap .element-block.item_8:before {
+        background-position: -721px -12px; }
+      #elements .wrap .element-block h4 {
+        text-transform: uppercase;
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 700;
+        height: 50px; }
+      #elements .wrap .element-block p {
+        font-size: 16px;
+        line-height: 27px; }
 
 .galerry-block {
   display: -webkit-box;
