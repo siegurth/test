@@ -4,7 +4,7 @@ html, body {
 }
 body {
 	min-height: 100%;
-	font-family: "NerisLight", sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
 	background-color: #fff;
 	color: #333;
@@ -13,4 +13,24 @@ body {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+header, section, main, footer {
+	width: 100%;
+}
+section {
+	padding: 120px 0;
+	&.no-padding {
+		padding: 0;
+	}
+}
+main {
+
+}
+footer {
+
+}
+.wrap {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
 }

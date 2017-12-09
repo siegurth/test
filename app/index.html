@@ -5,31 +5,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
 
 	<title>DzenCode YogaLanding</title>
-
-	<link rel="stylesheet" href="css/main.css">
-
-	<script src="https://ajax.googleapis.com/ajax/abs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="js/main.js"></script>
 	
-	<style>
-	* {transition: all 0.5, ease-n-out;}
-		section {
-			height: 600px;
-			width: 100%; 
-			display: block;
-			overflow: hidden;
-		}
-		section:nth-child(odd) {
-			background-color: #f1f1f1;
-		}
-		Section:nth-child(even) {
-			background-color: #666;
-		}
-	</style>
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/main.js"></script>
 	<script>
 		$(document).ready(function(){
-    	$("#menu").on("click","a", function (event) {
+    	$("#menu li a").click(function(event) {
 					event.preventDefault();
 					var id  = $(this).attr('href'),
 					top = $(id).offset().top;
@@ -38,27 +19,32 @@
 		});
 	</script>
 
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+
 </head>
 <body>
 	<div class="wrapper">
 		<header>
 			<section>
-				<nav id="menu">
-					<a href="#" class="sandwich-menu">
-						<span>&nbsp;</span>
-						<span>&nbsp;</span>
-						<span>&nbsp;</span>
-					</a>
-					<nav>
-						<h1 class="logo"><a href="#">Yoga</a></h1>
-						<a href="#about">About us</a>
-						<a href="#reservation">Reservation</a>
-						<a href="#gallery">Gallery</a>
-						<a href="#blog">Blog</a>
-						<a href="#elements">Elements</a>
-						<a href="#shop">Shop</a>
+				<div class="wrap">
+					<h1 class="logo"><a href="#">Yoga</a></h1>
+					<nav id="menu">
+						<a href="#" class="sandwich-menu">
+							<span>&nbsp;</span>
+							<span>&nbsp;</span>
+							<span>&nbsp;</span>
+						</a>
+						<ul>
+							<li><a href="#about">About us</a></li>
+							<li><a href="#reservation">Reservation</a></li>
+							<li><a href="#gallery">Gallery</a></li>
+							<li><a href="#blog">Blog</a></li>
+							<li><a href="#elements">Elements</a></li>
+							<li><a href="#shop">Shop</a></li>
+						</ul>
 					</nav>
-				</nav>
+				</div>
 			</section>
 		</header>
 		<main>
@@ -127,8 +113,7 @@
 					</div>
 				</div>
 			</section>
-			<section id="gallery">
-				<div class="wrap">
+			<section class="no-padding" id="gallery">
 					<div class="galerry-block">
 						<div>
 							<img src="img/img-06.jpg" alt="image">
@@ -163,7 +148,6 @@
 							<div class="cover"><a href="#"></a></div>
 						</div>
 					</div>
-				</div>
 			</section>
 			<section id="aboutUs">
 				<div class="wrap">
@@ -173,9 +157,9 @@
 					</div>
 					<div class="column">
 						<div class="slider">
-							<div><img src="img/img-17.png" alt="image"></div>
-							<div><img src="img/img-17.png" alt="image"></div>
-							<div><img src="img/img-17.png" alt="image"></div>
+							<div><img src="img/img-15.jpg" alt="image"></div>
+							<div><img src="img/img-15.jpg" alt="image"></div>
+							<div><img src="img/img-15.jpg" alt="image"></div>
 						</div>
 					</div>
 				</div>
@@ -291,17 +275,25 @@
 					</div>
 					<div class="column">
 						<h4>contact us</h4>
-						<ul>
-							<li class="location">5419 Joseph Mountains <br/>Apt. 716</li>
-							<li class="phone">+1 234 567 89 <br/> +1 234 678 90</li>
-							<li class="mail"><a href="mailto:joga.info@example.com">joga.info@example.com</a></li>
-							<li class="site"><a href="http://www.example.com" target="_blank">www.example.com</a></li>
+						<ul class="contactUs">
+							<li>
+								<ul>
+									<li class="location">5419 Joseph Mountains <br/>Apt. 716</li>
+									<li class="phone">+1 234 567 89 <br/> +1 234 678 90</li>
+								</ul>
+							</li>
+							<li>
+								<ul>
+									<li class="mail"><a href="mailto:joga.info@example.com">joga.info@example.com</a></li>
+									<li class="site"><a href="http://www.example.com" target="_blank">www.example.com</a></li>
+								</ul>
+							</li>
 						</ul>
 					</div>
 				</div>
 			</section>
-			<section>
-				<p>Copyright  &copy;  2016-2017 Yoga classes</p>
+			<section class="no-padding">
+				<p class="copyright">Copyright  &copy;  2016-2017 Yoga classes</p>
 			</section>
 		</footer>
 	</div>
