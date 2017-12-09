@@ -14,4 +14,12 @@ $( document ).ready(function() {
   	dots: false
   });
 
+  $('.blog-slider').slick({
+  	infinite: true,
+		speed: 2000,
+  	slidesToShow: 1,
+  	dots: true,
+  	adaptiveHeight: true
+  });
+
 });

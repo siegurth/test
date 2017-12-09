@@ -609,6 +609,10 @@ section .beautiful {
         display: block;
         margin: 25px auto 0; }
 
+section.background {
+  background: transparent url("../img/bg-lylia.png") no-repeat 100% 100%;
+  padding: 0; }
+
 .gallery-block {
   display: -webkit-box;
   display: -webkit-flex;
@@ -704,6 +708,94 @@ section .beautiful {
   .slider img {
     width: 100%;
     height: auto; }
+
+.blog-slider {
+  width: 100%;
+  display: block;
+  position: relative;
+  -webkit-box-shadow: 0 0px 43px 0px #999;
+          box-shadow: 0 0px 43px 0px #999;
+  min-height: 250px; }
+  .blog-slider .slick-slide {
+    -webkit-border-radius: 8px;
+            border-radius: 8px;
+    background-color: #fff;
+    width: 99%;
+    min-height: 250px;
+    position: relative;
+    padding: 28px 60px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+            align-content: center; }
+    .blog-slider .slick-slide figure {
+      border: 1px solid #ccc;
+      padding: 10px;
+      overflow: hidden;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      width: 148px;
+      height: 148px;
+      -webkit-flex-basis: 148px;
+          -ms-flex-preferred-size: 148px;
+              flex-basis: 148px;
+      background-color: #fff;
+      margin-right: 37px; }
+      .blog-slider .slick-slide figure img {
+        width: 100%;
+        height: auto;
+        display: inline-block;
+        -webkit-border-radius: 50%;
+                border-radius: 50%; }
+    .blog-slider .slick-slide article {
+      position: relative;
+      max-width: 775px;
+      width: 100%;
+      padding: 0 80px 0 50px; }
+      .blog-slider .slick-slide article:after {
+        content: "";
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        margin-top: -8px;
+        width: 20px;
+        height: 17px;
+        background: url("../img/icon-quotes.png") no-repeat -1px 0; }
+      .blog-slider .slick-slide article:before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 20px;
+        height: 17px;
+        background: url("../img/icon-quotes.png") no-repeat -26px 0; }
+      .blog-slider .slick-slide article p {
+        line-height: 22px;
+        color: #666;
+        font-style: italic; }
+        .blog-slider .slick-slide article p.person {
+          font-style: normal;
+          margin-top: 15px;
+          position: relative;
+          color: #ccc; }
+          .blog-slider .slick-slide article p.person:before {
+            content: '';
+            display: block;
+            width: 1px;
+            height: 75px;
+            position: absolute;
+            left: -45px;
+            bottom: 0;
+            background-color: #ccc; }
+          .blog-slider .slick-slide article p.person span {
+            font-weight: 700;
+            font-size: 16px;
+            color: #6666ff; }
 
 /* footer */
 footer {
